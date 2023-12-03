@@ -1,13 +1,8 @@
-package com.example.example
+package com.example.tp5_kotlin.Model
 
-import com.google.gson.annotations.SerializedName
-
-
-data class Weather (
-
-  @SerializedName("id"          ) var id          : Int?    = null,
-  @SerializedName("main"        ) var main        : String? = null,
-  @SerializedName("description" ) var description : String? = null,
-  @SerializedName("icon"        ) var icon        : String? = null
-
+data class Weather(
+    val description: String,
+    val icon: String,
+    val id: Int,
+    val main: String
 )

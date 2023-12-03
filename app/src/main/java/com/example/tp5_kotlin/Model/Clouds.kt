@@ -1,10 +1,5 @@
-package com.example.example
+package com.example.tp5_kotlin.Model
 
-import com.google.gson.annotations.SerializedName
-
-
-data class Clouds (
-
-  @SerializedName("all" ) var all : Int? = null
-
+data class Clouds(
+    val all: Int
 )

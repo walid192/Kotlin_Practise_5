@@ -1,11 +1,6 @@
-package com.example.example
+package com.example.tp5_kotlin.Model
 
-import com.google.gson.annotations.SerializedName
-
-
-data class Coord (
-
-  @SerializedName("lon" ) var lon : Double? = null,
-  @SerializedName("lat" ) var lat : Double? = null
-
+data class Coord(
+    val lat: Double,
+    val lon: Double
 )

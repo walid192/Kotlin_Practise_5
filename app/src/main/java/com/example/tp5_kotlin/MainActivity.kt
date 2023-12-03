@@ -7,8 +7,8 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.widget.Toast
 import com.example.tp5_kotlin.databinding.ActivityMainBinding
+import com.example.tp5_kotlin.viewModels.weatherViewModel
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.button.setOnClickListener {
-           intent= Intent(this,Forecast::class.java)
+           intent= Intent(this,ForecastActivity::class.java)
             intent.putExtra("city",spinner.selectedItem.toString())
             startActivity(intent)
         }

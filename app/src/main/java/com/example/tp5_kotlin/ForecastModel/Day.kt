@@ -3,7 +3,7 @@ package com.example.tp5_kotlin.ForecastModel
 data class Day(
     val clouds: Int,
     val deg: Int,
-    val dt: Int,
+    var dt: String,
     val feels_like: FeelsLike,
     val gust: Double,
     val humidity: Int,
@@ -11,8 +11,8 @@ data class Day(
     val pressure: Int,
     val rain: Double,
     val speed: Double,
-    val sunrise: Int,
-    val sunset: Int,
+    var sunrise: Int,
+    var sunset: Int,
     val temp: Temp,
     val weather: List<Weather>
 )
